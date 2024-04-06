@@ -40,7 +40,7 @@ body { background:#1e1e1e; color:#fff; }
 .tac{ text-align: center; }
 
 /* header & footer */
-#header{ position:fixed; top:0; left:0; width:100%; height: 7rem; border-bottom: 1px solid #333; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); z-index: 5; text-shadow: 0 0 4px rgba(0,0,0,0.7); }
+#header{ position:fixed; top:0; left:0; width:100%; height: 7rem; border-bottom: 1px solid #333; background:rgb(30, 30, 30, 0.3); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 5; text-shadow: 0 0 4px rgba(0,0,0,0.7); }
 #header .stn { height: 100%; }
 #header .cont { display:flex; justify-content: space-between; align-items: center; height: 100%; }
 #header h1 a { font-size:1.8rem; line-height: 1.6; }
@@ -72,9 +72,7 @@ main { min-height:calc(100vh - 7rem); }
 .stn_list .tag_wrap { display:flex; align-items: center; gap:4rem; padding-bottom:4rem; border-bottom:1px solid #333; }
 .stn_list .tag_wrap p { font-size:1.8rem; font-weight: bold; line-height: 1.6; }
 .stn_list .tag_wrap ul { display:flex; align-items: center; gap:1.2rem; }
-.stn_list .tag_wrap ul li { padding:0.6rem 2rem; background:#333; border-radius: 3rem; line-height: 1.6; font-size:1.8rem; cursor: pointer; transition:background 0.3s; }
-.stn_list .tag_wrap ul li.on { background:#001EFF; }
-.stn_list .tag_wrap ul li:hover { background:#001EFF; }
+.stn_list .tag_wrap ul li { padding:0.6rem 2rem; background:#333; border-radius: 3rem; line-height: 1.6; font-size:1.8rem; }
 .stn_list .ssul_list { display:flex; flex-wrap: wrap; gap:2.4rem; padding-top:4rem; padding-bottom:12rem; }
 .stn_list .ssul_list a { width:calc(33.33% - 1.6rem); margin-bottom:3.2rem; transition: transform 0.3s; }
 .stn_list .ssul_list a:hover { transform: scale(1.02); }
@@ -86,7 +84,6 @@ main { min-height:calc(100vh - 7rem); }
 
 /* Contents */
 .stn_ssul { margin-top:7rem; padding:16rem 0; }
-.stn_ssul {  }
 .stn_ssul .desc_area { padding-bottom:4.8rem; text-align: center; border-bottom: 1px solid #333; }
 .stn_ssul .desc_area h2 { font-size:4.8rem; padding-bottom:1.6rem; }
 .stn_ssul .desc_area p.nickname { font-size:2.8rem; }
@@ -95,24 +92,25 @@ main { min-height:calc(100vh - 7rem); }
 .stn_ssul .content { padding-top:2.4rem; white-space:pre-line; word-break: keep-all; line-height:1.6; font-weight: 200; font-size: 2.4rem; }
 .stn_ssul .btn_list { display:block; margin:12rem auto 0; padding:1.2rem 6.8rem; width:fit-content; background:#333; border-radius: 5rem; line-height: 1.6; font-size:2.4rem; color:#ccc; transition:background 0.3s, color 0.3s; }
 .stn_ssul .btn_list:hover { background:#001EFF; color:#fff; }
-.stn_ssul {  }
-.stn_ssul {  }
 
+
+/* PC 모니터 */
 @media screen and (max-width:1920px) {
 	.stn{ border-left:0px; border-right:0px; }
 }
+/* 맥북프로 */
 @media screen and (max-width:1660px) {
 	/* .stn_title h2 { font-size:10rem; } */
 	html { font-size: 50%; }
 }
-
+/* 맥북에어 */
 @media screen and (max-width:1440px) {
 	/* .stn_title h2 { font-size:8rem; } */
 	html { font-size: 46%; }
 	.stn_list .ssul_list a { width:calc(50% - 1.2rem); }
 	.img_bgText { margin-top:8rem; }
 }
-
+/* 모바일 */
 @media screen and (max-width:720px) {
 	.stn_title { padding:8rem 0; }
 	.stn_title h2 { font-size:4rem; line-height:1.1; }
