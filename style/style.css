@@ -109,6 +109,8 @@ main { min-height:calc(100vh - 7rem); }
 @media screen and (max-width:1440px) {
 	/* .stn_title h2 { font-size:8rem; } */
 	html { font-size: 46%; }
+	.stn_list .ssul_list a { width:calc(50% - 1.2rem); }
+	.img_bgText { margin-top:8rem; }
 }
 
 @media screen and (max-width:720px) {
