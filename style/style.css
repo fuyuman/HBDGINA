@@ -109,6 +109,7 @@ main { min-height:calc(100vh - 7rem); }
 }
 
 @media screen and (max-width:720px) {
+	.stn{ border-left:0px; border-right:0px; }
 	.stn_title { padding:8rem 0; }
 	.stn_title h2 { font-size:4rem; line-height:1.1; }
 	.stn_list .tag_wrap { align-items: flex-start; }
