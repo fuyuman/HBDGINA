@@ -10,7 +10,7 @@
 /* reset */
 /* 별도파일 구성 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-family: 'Montserrat', 'Noto Sans KR', sans-serif !important; vertical-align: baseline; letter-spacing: 0.22px; }
-html { font-size: 62.5%; }
+html { font-size: 62.5%; transition:font-size 0.3s; }
 body { font-size: 1.6rem; line-height: 1; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 ol, ul { list-style: none; }
@@ -62,7 +62,7 @@ main { min-height:calc(100vh - 7rem); }
 /* stn */
 .stn_title { position:relative; padding:12rem 0; margin-top:7rem; }
 .stn_title .cont { position:relative; z-index: 1; }
-.stn_title h2 { font-size:12rem; font-weight: bolder !important; line-height: 0.95; }
+.stn_title h2 { font-size:12rem; font-weight: bolder !important; line-height: 0.95; transition:font-size 0.3s; }
 /* .stn_title h2 { font-size:12rem; font-weight: bolder !important; text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff; color:#1e1e1e; } */
 .stn_title .sub_tit { padding-top:8rem; font-size:2.4rem; line-height:1.6; }
 .img_bgText { position:absolute; left:50%; top:0; transform: translateX(-50%); width:100%; max-width: 192rem; height:auto; z-index: 0; }
@@ -97,3 +97,31 @@ main { min-height:calc(100vh - 7rem); }
 .stn_ssul .btn_list:hover { background:#001EFF; color:#fff; }
 .stn_ssul {  }
 .stn_ssul {  }
+
+@media screen and (max-width:1660px) {
+	/* .stn_title h2 { font-size:10rem; } */
+	html { font-size: 50%; }
+}
+
+@media screen and (max-width:1440px) {
+	/* .stn_title h2 { font-size:8rem; } */
+	html { font-size: 46%; }
+}
+
+@media screen and (max-width:720px) {
+	.stn_title { padding:8rem 0; }
+	.stn_title h2 { font-size:4rem; line-height:1.1; }
+	.stn_list .tag_wrap { align-items: flex-start; }
+	.stn_list .tag_wrap p { width:56px; line-height:30px; }
+	.stn_list .tag_wrap ul { width:calc(100% - 56px - 4rem); flex-wrap: wrap ; }
+	.stn_list .ssul_list { display:flex; flex-wrap: wrap; gap:2.4rem; padding-top:4rem; padding-bottom:12rem; }
+	.stn_list .ssul_list a { width:100%; margin-bottom:3.2rem; transition: unset; }
+	.stn_list .ssul_list a:hover { transform: unset; }
+	.stn_title .sub_tit { padding-top:4rem; font-size:2rem; word-break: keep-all; }
+	.img_bgText { margin-top:8rem; }
+	.stn_list .tag_wrap ul li { font-size:1.6rem; }
+	#footer .cont p:last-child { display: none; }
+	.stn_ssul { padding:12rem 0; }
+	.stn_ssul .desc_area h2 { font-size:4rem; }
+	.stn_ssul .content { word-break: unset; }
+}
