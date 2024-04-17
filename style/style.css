@@ -92,6 +92,7 @@ main { min-height:calc(100vh - 7rem); }
 .stn_ssul .content { padding-top:2.4rem; white-space:pre-line; word-break: keep-all; line-height:1.6; font-weight: 200; font-size: 2.4rem; }
 .stn_ssul .btn_list { display:block; margin:12rem auto 0; padding:1.2rem 6.8rem; width:fit-content; background:#333; border-radius: 5rem; line-height: 1.6; font-size:2.4rem; color:#ccc; transition:background 0.3s, color 0.3s; }
 .stn_ssul .btn_list:hover { background:#001EFF; color:#fff; }
+.wr_gpt { align-items: center; line-height: 100%; gap:1.2rem; font-weight: bold; }
 
 
 /* PC 모니터 */
