@@ -1,3 +1,4 @@
 window.addEventListener("load",function(){
-    document.body.classList.add("on");
+    const elBody = document.querySelector(".main");
+    elBody.classList.add("on");
 })
