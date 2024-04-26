@@ -59,6 +59,13 @@ main { min-height:calc(100vh - 7rem); }
 .stn{ width:100%; max-width: 192rem; margin:0 auto; border-left:1px solid #333; border-right:1px solid #333; }
 .cont{ width:90%; max-width:120rem; margin:0 auto; }
 
+/* load */
+.load { display:flex; flex-direction: column; justify-content: center; align-items: center; position:fixed; left:0; top:0; width:100vw; height:100vh; z-index: 10000; background:#15202a; animation:loadAni 0.6s 2s forwards; }
+@keyframes loadAni {
+	0% { opacity:1; transform: scale(1); }
+	100% { opacity:0; pointer-events: none; transform: scale(1.3); }
+}
+
 /* stn */
 .stn_title { position:relative; padding:12rem 0; margin-top:7rem; }
 .stn_title .cont { position:relative; z-index: 1; }
@@ -94,6 +101,7 @@ main { min-height:calc(100vh - 7rem); }
 .stn_ssul .btn_list:hover { background:#001EFF; color:#fff; }
 .wr_gpt { align-items: center; line-height: 100%; gap:1.2rem; font-weight: bold; }
 .tac img { max-width:100%; height:auto; }
+.normal_txt { padding:2rem 0 8rem; line-height: 1.6; font-weight: 200; font-size:2.4rem; }
 
 
 /* PC 모니터 */
